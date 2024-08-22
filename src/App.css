@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-container {
+  width: 1500px;
+  margin: 10px;
+  /* overflow-x: auto; */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border-left: 1px solid #f4f1f1;
+  border-top: 1px solid #f4f1f1;
+  border-right: 1px solid #f4f1f1;
+}
+
+th {
+  cursor: pointer;
+  background-color: rgb(5, 143, 141);
+  color: white;
+}
+
+#search-input {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.college-name {
+  color: rgb(9, 186, 240);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.college-location {
+  font-size: 0.7rem;
+}
+select {
+  border: none;
+  outline: none;
+  height: 30px;
+  background-color: rgb(241, 241, 203);
+  border-radius: 15px;
+  margin: 10px 0px;
+  color: rgba(228, 83, 5, 0.945);
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.colleges-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .placement-box {
+  display: grid;
+} */
+
+.user-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rating {
+  position: relative;
+  margin-left: 20px;
+}
+.rating::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  left: -18px;
+  top: 2px;
+  background-color: rgba(228, 83, 5, 0.945);
+}
+
+.user-reviews select {
+  width: 150px;
+}
+
+.compare-placement-fee {
+  margin-top: 5px;
+}
+.apply-btn-box,
+.download-brochure-box,
+.add-to-compare-box {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.compare-fee,
+.compare-placement-fee {
+  display: flex;
+  gap: 5px;
+}
+
+.apply-btn-box,
+.apply-btn,
+.compare-fee,
+.compare-fee button,
+.compare-placement-fee,
+.compare-placement-fee button {
+  color: rgba(228, 83, 5, 0.945);
+}
+
+.fees-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.placement-fees {
+  margin: 10px 0px;
+}
+.download-brochure-box,
+.download-brochure-btn,
+.fees,
+.placement-fees {
+  color: rgba(4, 184, 103, 0.92);
+}
